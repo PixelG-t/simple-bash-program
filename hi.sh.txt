@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "hello $name what is your favorite color"
+
+
+read color
+echo "thats a nice color the clor $color is a great color"
+
+
+echo "what is 1 + 1"
+read whats
+if [ "$whats" = "2" ]
+then
+  echo "correct"
+else
+  echo "incorrect"
+fi
+
+echo "will you like to end now? (y or n)"
+read question
+if [ "$question" = "y" ]; then
+  echo "ok"
+  exit 1
+else
+  echo "ok"
+fi
